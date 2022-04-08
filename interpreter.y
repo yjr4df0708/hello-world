@@ -5,12 +5,9 @@ int yyerror(char *s);
 int yywrap();
 %}
 %token COLON PASS MACRO_START MACRO_END MACRO_NAME VAR LPAREN RPAREN LBRACKET RBRACKET LCBRACKET RCBRACKET POWER MULT DIV ADD SUB COMMA NUM_INTEGER NUM_DOUBLE STR
-%type <text> PASS
-%type <text> MACRO_NAME
-%type <text> VAR
+%type <text> PASS MACRO_NAME VAR STR
 %type <_int> NUM_INTEGER
 %type <_double> NUM_DOUBLE
-%type <text> STR
 %union{
 	char text[256];
 	int _int;
