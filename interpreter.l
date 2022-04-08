@@ -4,6 +4,7 @@
 #include <string.h>
 int layer=0;
 %}
+
 %s ESC PROC
 M_NAME					[A-Z0-9_]+
 VARNAME					[a-z_][A-Za-z0-9_]*
