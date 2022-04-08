@@ -18,3 +18,4 @@ fi
 flex $lex
 bison $yacc
 gcc -o $out lex.yy.c
+chmod +x $out
